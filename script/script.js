@@ -14,8 +14,14 @@ var app = new Vue({
       nome: "",
       cognome: "",
       immagine: "img/immagini-felicità.jpg",
-      classi:[
-
-      ],
+      color: "red"
+    },
+    methods: {
+      changeColor: function () {
+        if (color == "blue") {
+          this.color = "red";
+        }
+        this.color = "blue";
+      }
     }
   });

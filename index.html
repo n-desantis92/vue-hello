@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <title>Vue-Hello</title>
 </head>
 <body>
   <div id="app">
     <input type="text" v-model= "nome" placeholder="inserisci il nome">
     <input type="text" v-model= "cognome" placeholder="inserisci il cognome">
-    <h1>{{messaggio}} {{nome}} {{cognome}}</h1>
+    <h1 :class= "color">{{messaggio}} {{nome}} {{cognome}}</h1>
     <img :src="immagine" alt="sorriso">
+    <button @click="changeColor" type="button" name="button">cambia colore</button>
   </div>
   <script src="script/script.js" charset="utf-8"></script>
 </body>

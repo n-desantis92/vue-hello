@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+button {
+  display: block;
+}
