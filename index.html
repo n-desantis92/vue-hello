@@ -10,11 +10,13 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-model= "nome" placeholder="inserisci il nome">
-    <input type="text" v-model= "cognome" placeholder="inserisci il cognome">
+    <div class="input_cont">
+      <input type="text" v-model= "nome" placeholder="inserisci il nome">
+      <input type="text" v-model= "cognome" placeholder="inserisci il cognome">
+      <button @click="changeColor" type="button" name="button">cambia colore</button>
+    </div>
     <h1 :class="color">{{messaggio}} {{nome}} {{cognome}}</h1>
     <img :src="immagine" alt="sorriso">
-    <button @click="changeColor" type="button" name="button">cambia colore</button>
   </div>
   <script src="script/script.js" charset="utf-8"></script>
 </body>
