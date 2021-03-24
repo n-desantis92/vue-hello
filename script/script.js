@@ -18,10 +18,12 @@ var app = new Vue({
     },
     methods: {
       changeColor: function () {
-        if (color == "blue") {
+        if (this.color == "blue") {
           this.color = "red";
+        }else {
+          this.color = "blue";
+
         }
-        this.color = "blue";
       }
     }
   });

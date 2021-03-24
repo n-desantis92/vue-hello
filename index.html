@@ -12,7 +12,7 @@
   <div id="app">
     <input type="text" v-model= "nome" placeholder="inserisci il nome">
     <input type="text" v-model= "cognome" placeholder="inserisci il cognome">
-    <h1 :class= "color">{{messaggio}} {{nome}} {{cognome}}</h1>
+    <h1 :class="color">{{messaggio}} {{nome}} {{cognome}}</h1>
     <img :src="immagine" alt="sorriso">
     <button @click="changeColor" type="button" name="button">cambia colore</button>
   </div>
